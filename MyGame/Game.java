@@ -1,12 +1,13 @@
 package com.MyGame;
 
-import com.MyGame.Entity.*;
 import com.MyGame.Input.Sound;
 
-import javax.swing.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 
+/**
+ * @author Andreina
+ */
 public class Game implements Runnable {
 
 
@@ -63,7 +64,6 @@ public class Game implements Runnable {
     public void run()
     {
         initialize();
-        System.out.println("Scor initial:" + Player.getScor());
 
         while (isRunning)
         {
@@ -98,17 +98,7 @@ public class Game implements Runnable {
     public static void main(String[] args)
     {
         Game game = new Game();
-        Display display = new Display() ;
-
-        JFrame frame = new JFrame(Title);
-        frame.add(display);
-        frame.pack();
-        frame.setResizable(false);
-        frame.setLocationRelativeTo(null);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setVisible(true);
-
-        display.start();
-        game.start();
+        GuiFrame gui = new GuiFrame(game);
+        gui.showOnScreen("MenuPanel");
     }
 }

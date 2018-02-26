@@ -9,7 +9,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 
 /**
- * Created by eu on 12/20/2016.
+ * @author Andreina
  */
 public class Coins {
 

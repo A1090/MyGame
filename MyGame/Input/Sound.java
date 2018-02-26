@@ -5,7 +5,7 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * Created by eu on 1/6/2017.
+ * @author Andreina
  */
 public class Sound extends Thread{
 

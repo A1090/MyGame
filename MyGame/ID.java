@@ -1,7 +1,7 @@
 package com.MyGame;
 
 /**
- * Created by eu on 11/15/2016.
+ * @author Andreina
  */
 public enum ID {
 

@@ -9,7 +9,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 
 /**
- * Created by eu on 1/4/2017.
+ * @author Andreina
  */
 public class Wall extends Tile{
 

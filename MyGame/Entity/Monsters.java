@@ -10,7 +10,7 @@ import java.io.File;
 import java.util.Random;
 
 /**
- * Created by eu on 12/3/2016.
+ * @author Andreina
  */
 public class Monsters extends MnmEntity{
 

@@ -1,7 +1,6 @@
 package com.MyGame;
 
 import com.MyGame.Entity.Player;
-import com.MyGame.Input.Camera;
 import com.MyGame.Input.KeyInput;
 
 import java.awt.image.BufferStrategy;
@@ -9,7 +8,7 @@ import java.awt.image.BufferStrategy;
 import java.awt.*;
 
 /**
- * Created by eu on 12/22/2016.
+ * @author Andreina
  */
 public class Display extends Canvas implements  Runnable {
 

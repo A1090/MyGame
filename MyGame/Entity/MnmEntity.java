@@ -6,7 +6,7 @@ import com.MyGame.ID;
 import java.awt.*;
 
 /**
- * Created by eu on 11/15/2016.
+ * @author Andreina
  */
 public abstract class MnmEntity {
 

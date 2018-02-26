@@ -11,6 +11,9 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.Iterator;
 
+/**
+ * @author Andreina
+ */
 public class Player extends MnmEntity{
 
     private static int facing;
@@ -21,7 +24,6 @@ public class Player extends MnmEntity{
     public Player(int _x, int _y, int _width, int _height, boolean _solid,ID _entityID, Handler _handler)
     {
         super(_x, _y, _width, _height, _solid, _entityID, _handler);
-        System.out.println(System.getProperty("user.dir"));
         playerimage = Utils.loadImage(new File("res/mnmright.png"));
     }
 
@@ -91,13 +93,8 @@ public class Player extends MnmEntity{
                 collide=new Sound("res/collide.wav");
                 collide.start();
                 Game.setLives(Game.getLives()-1);
-                if(Game.getLives()>0)
+                if(Game.getLives()<=0)
                 {
-                    System.out.println("Ai lovit un monstru!");
-                }
-                else
-                {
-                    System.out.println("You died");
                     handler.getEntitylist().remove();
                 }
             }
@@ -109,13 +106,8 @@ public class Player extends MnmEntity{
                 collide=new Sound("res/collide.wav");
                 collide.start();
                 Game.setLives(Game.getLives()-1);
-                if(Game.getLives()>0)
+                if(Game.getLives()<=0)
                 {
-                    System.out.println("Ai lovit un monstru!");
-                }
-                else
-                {
-                    System.out.println("You died");
                     handler.getEntitylist().remove();
                 }
             }
@@ -127,7 +119,6 @@ public class Player extends MnmEntity{
                 Sound collide;
                 collide=new Sound("res/collide.wav");
                 collide.start();
-                System.out.println("Ai omorat un monstru!");
             }
             if(getBounds().intersects(m.getBoundsRight()))
             {
@@ -137,13 +128,8 @@ public class Player extends MnmEntity{
                 collide=new Sound("res/collide.wav");
                 collide.start();
                 Game.setLives(Game.getLives()-1);
-                if(Game.getLives()>0)
+                if(Game.getLives()<=0)
                 {
-                    System.out.println("Ai lovit un monstru!");
-                }
-                else
-                {
-                    System.out.println("You died");
                     handler.getEntitylist().remove();
                 }
             }

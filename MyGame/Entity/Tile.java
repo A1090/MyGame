@@ -6,7 +6,7 @@ import com.MyGame.ID;
 import java.awt.*;
 
 /**
- * Created by eu on 1/4/2017.
+ * @author Andreina
  */
 public abstract class Tile {
 

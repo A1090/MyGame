@@ -1,5 +1,9 @@
 package com.MyGame;
 
+import com.MyGame.Entity.Wall;
+import com.MyGame.Entity.Monsters;
+import com.MyGame.Entity.Tile;
+import com.MyGame.Entity.Player;
 import com.MyGame.Entity.*;
 
 import java.awt.*;
@@ -9,7 +13,7 @@ import java.util.LinkedList;
 
 
 /**
- * Created by eu on 11/15/2016.
+ * @author Andreina
  */
 public class Handler {
 
